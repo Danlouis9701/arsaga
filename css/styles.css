@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Playfair+Display');
+
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+.titulos{
+    font-family: 'Playfair Display', serif;
+    
+}
