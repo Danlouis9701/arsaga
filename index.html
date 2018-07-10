@@ -2,93 +2,1433 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <title>Arsaga</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="fonts/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <title>Arsaga</title>
+    <link rel="stylesheet" href="css/icon_servicios.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114584658-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-114584658-1');
+    </script>
+
 </head>
+
+
 <body>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-          
-                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                  <ul class="navbar-nav mr-auto">
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-transparent2">
+        <div class="container">
+            <a class="navbar-brand" href="#" onclick="$('header').animatescroll({scrollSpeed:1500,easing:'easeInOutQuad'});"><img src="img/logo-menu.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#nosotros.html">Nosotros</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
+
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                      <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
+                        <a class="nav-link" href="#" onclick="$('#servicios').animatescroll({scrollSpeed:1500,easing:'easeInOutQuad'});">
+                            Servicios Integrales
+                          </a>
                     </li>
-                  </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="vidrios.html">
+                            Cristal | Vidrio
+                          </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="aluminio.html">
+                           Aluminio
+                          </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link btn" href="proyectos.html">Proyectos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="$('#contacto').animatescroll({scrollSpeed:1500,easing:'easeInOutQuad'});">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <!--
+            <div class=" basis justify-content-center align-items-center">
+                <img src="img/logo_header_Arsaga.png" class="img-fluid mt-class" alt="">
+            </div>
+-->
+            <div class="row justify-content-center align-items-center">
+                <div class="col-10 col-md-6">
+                    <img src="img/logo_header_Arsaga.png" class="img-fluid align-self-center mt-class" alt="">
                 </div>
-              </nav>
-          
-              <main role="main">
-          
-                <!-- Main jumbotron for a primary marketing message or call to action -->
-                <div class="jumbotron">
-                  <div class="container">
-                    <h1 class="display-3">Hello, world!</h1>
-                    <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-                  </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section id="vendido mt-5">
+        <h2 class="titulos color-secundario text-center py-5">
+            LO MAS VENDIDO
+        </h2>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="img/mas_vendido/CRISTAL-CLARO-ANTIREFLEJANTE-272x274.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title color-secundario">FILTRASOL</h5>
+                                <h6>
+                                    <a href="#" class="btn color-secundario f-size">VER MAS</a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-          
-                <div class="container">
-                  <!-- Example row of columns -->
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h2>Heading</h2>
-                      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="img/mas_vendido/FILTRASOL-272x274.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title color-secundario">CRISTAL CLARO</h5>
+                                <h6>
+                                    <a href="#" class="btn color-secundario f-size">VER MAS</a>
+                                </h6>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                      <h2>Heading</h2>
-                      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="img/mas_vendido/LAMINADO-PVV-COLOR-272x274.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title color-secundario">Cristal laminado</h5>
+                                <h6>
+                                    <a href="#" class="btn color-secundario f-size">VER MAS</a>
+                                </h6>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                      <h2>Heading</h2>
-                      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="img/mas_vendido/REFLECTA-272x274.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title color-secundario">CRISTAL REFLECTA</h5>
+                                <h6>
+                                    <a href="#" class="btn color-secundario f-size">VER MAS</a>
+                                </h6>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-          
-                  <hr>
-          
-                </div> <!-- /container -->
-          
-              </main>
-          
-              <footer class="container">
-                <p>&copy; Company 2017-2018</p>
-              </footer>
-            
-<!-- BOOTSTRAP CORE JAVASCRIPT  -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="servicios">
+        <h2 class="titulos color-secundario text-center py-5">
+            SERVICIOS
+        </h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-lg-1 col-md-3 col-lg-2 my-4 px-3 text-center" id="serv1">
+                    <a href="#" data-toggle="modal" data-target="#modalFachadas">
+                        <div class="iconServ"></div>
+                    </a>
+                    <a href="#" data-toggle="modal" data-target="#modalFachadas">
+                        <h5 class="titleServ">FACHADAS</h5>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2 my-4 px-3 text-center" id="serv2">
+                    <a href="#" data-toggle="modal" data-target="#modalMuro">
+                        <div class="iconServ"></div>
+                    </a>
+                    <a href="#" data-toggle="modal" data-target="#modalMuro">
+                        <h5 class="titleServ">MURO CORTINA</h5>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2 my-4 px-3 text-center" id="serv3">
+                    <a href="#" data-toggle="modal" data-target="#modalEuro">
+                        <div class="iconServ"></div>
+                    </a>
+                    <a href="#" data-toggle="modal" data-target="#modalEuro">
+                        <h5 class="titleServ">EUROVENT</h5>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2 my-4 px-3 text-center" id="serv4">
+                    <a href="#" data-toggle="modal" data-target="#modalCancel">
+                        <div class="iconServ"></div>
+                    </a>
+                    <a href="#" data-toggle="modal" data-target="#modalCancel">
+                        <h5 class="titleServ">CANCELERÍA</h5>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2 my-4 px-3 text-center" id="serv5">
+                    <a href="#" data-toggle="modal" data-target="#modalLouver">
+                        <div class="iconServ"></div>
+                    </a>
+                    <a href="#" data-toggle="modal" data-target="#modalLouver">
+                        <h5 class="titleServ">LOUVERS</h5>
+                    </a>
+                </div>
+                <div class="col-4 offset-lg-1 col-md-3 col-lg-2 my-4 px-3 text-center" id="serv6">
+                    <a href="#" data-toggle="modal" data-target="#modalShower">
+                        <div class="iconServ"></div>
+                    </a>
+                    <a href="#" data-toggle="modal" data-target="#modalShower">
+                        <h5 class="titleServ">SLIDING SHOWER</h5>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2 my-4 px-3 text-center" id="serv7">
+                    <a href="#" data-toggle="modal" data-target="#modalBarandal">
+                        <div class="iconServ"></div>
+                    </a>
+                    <a href="#" data-toggle="modal" data-target="#modalBarandal">
+                        <h5 class="titleServ">BARANDALES</h5>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2 my-4 px-3 text-center" id="serv8">
+                    <a href="#" data-toggle="modal" data-target="#modalAparadores">
+                        <div class="iconServ"></div>
+                    </a>
+                    <a href="#" data-toggle="modal" data-target="#modalAparadores">
+                        <h5 class="titleServ">APARADORES</h5>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2 my-4 px-3 text-center" id="serv9">
+                    <a href="#" data-toggle="modal" data-target="#modalDomos">
+                        <div class="iconServ"></div>
+                    </a>
+                    <a href="#" data-toggle="modal" data-target="#modalDomos">
+                        <h5 class="titleServ">DOMOS Y TRAGALUCES</h5>
+                    </a>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2 my-4 px-3 text-center" id="serv10">
+                    <a href="#" data-toggle="modal" data-target="#modalPuertas">
+                        <div class="iconServ"></div>
+                    </a>
+                    <a href="#" data-toggle="modal" data-target="#modalPuertas">
+                        <h5 class="titleServ">PUERTAS DE CRISTAL</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="my-5">
+        <h2 class="titulos color-secundario text-center py-5">
+            NUESTROS PROYECTOS
+        </h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="contenedor-flex mb-3">
+                        <a href="#" data-toggle="modal" data-target="#modalBayer">
+                            <div class="flex-img"><img src="img/proyectos/proyecto1.jpg" alt=""></div>
+                        </a>
+                        <a href="#" data-toggle="modal" data-target="#modalAeropuerto">
+                            <div class="flex-img"><img src="img/proyectos/proyecto2.jpg" alt=""></div>
+                        </a>
+                        <a href="#" data-toggle="modal" data-target="#modalHeb">
+                            <div class="flex-img"><img src="img/proyectos/proyecto3.jpg" alt=""></div>
+                        </a>
+                    </div>
+                    <div class="contenedor-flex mb-3">
+                        <a href="#" data-toggle="modal" data-target="#modalCima">
+                            <div class="flex-img"><img src="img/proyectos/proyecto4.jpg" alt=""></div>
+                        </a>
+                        <a href="#" data-toggle="modal" data-target="#modalSamsung">
+                            <div class="flex-img"><img src="img/proyectos/proyecto5.jpg" alt=""></div>
+                        </a>
+                        <a href="#" data-toggle="modal" data-target="#modalAmex">
+                            <div class="flex-img"><img src="img/proyectos/proyecto6.jpg" alt=""></div>
+                        </a>
+                    </div>
+                    <a href="proyectos.html" class="btn btn-outline-secondary my-4" role="button">VER MAS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="proveedores" class="my-5">
+       
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel owl-theme">
+                        <div> <img src="img/proveedores/prov1.jpg" alt="" class="img-responsive"></div>
+                        <div> <img src="img/proveedores/prov2.jpg" alt="" class="img-responsive"> </div>
+                        <div> <img src="img/proveedores/prov3.jpg" alt="" class="img-responsive"> </div>
+                        <div> <img src="img/proveedores/prov4.jpg" alt="" class="img-responsive"> </div>
+                        <div> <img src="img/proveedores/prov5.jpg" alt="" class="img-responsive"> </div>
+                        <div> <img src="img/proveedores/prov6.jpg" alt="" class="img-responsive"> </div>
+                        <div> <img src="img/proveedores/prov7.jpg" alt="" class="img-responsive"> </div>
+                        <div> <img src="img/proveedores/prov8.jpg" alt="" class="img-responsive"></div>
+                        <div> <img src="img/proveedores/prov9.jpg" alt="" class="img-responsive"> </div>
+                        <div> <img src="img/proveedores/prov10.jpg" alt="" class="img-responsive"> </div>
+                        <div> <img src="img/proveedores/prov11.jpg" alt="" class="img-responsive"> </div>
+                        <div> <img src="img/proveedores/prov12.jpg" alt="" class="img-responsive"> </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+       
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 pb-5">
+                    <img src="img/logo_footer.png" class="img-responsive d-block mx-auto" alt="">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 pb-5">
+                    <div class="row justify-content-center">
+                        <div class="col-1"><i class="fas fa-map-marker-alt fa-lg color-principal pt-1"></i></div>
+                        <div class="col-11">
+                            <p class="text-white"> Av. Fray Servando Teresa de Mier #308 <br> Local C, Col. Centro, C.P. 06090, Del. Cuauhtémoc, CDMX</p>
+                        </div>
+
+                        <div class="col-1"><i class="fas fa-envelope fa-lg color-principal pt-1"></i></div>
+                        <div class="col-11">
+                            <p class="text-white"> contacto@arsaga.co</p>
+                        </div>
+
+                        <div class="col-1"><i class="fas fa-phone fa-lg color-principal pt-1"></i> </div>
+                        <div class="col-11">
+                            <p class="text-white">6650·7373 | (55) 6354·3803 (55) <br> 4501·6582 | 228 112·1231</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-10 col-lg-4 pb-5">
+
+
+                    <!--Form with header-->
+
+                    <form action="mail.php" method="post">
+                        <div class="card border-primary rounded-0">
+                            <div class="card-header p-0">
+                                <div class="bg-info text-white text-center py-2">
+                                    <h3><i class="fa fa-envelope"></i> Contactanos</h3>
+                                    <p class="m-0">Con gusto te ayudaremos</p>
+                                </div>
+                            </div>
+                            <div class="card-body p-3">
+                                <!--Body-->
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                                        </div>
+                                        <input type="email" class="form-control" id="nombre" name="email" placeholder="ejemplo@gmail.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                                        </div>
+                                        <textarea class="form-control" placeholder="Envianos tu Mensaje" required></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <input type="submit" value="Enviar" class="btn btn-info btn-block rounded-0 py-2">
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                    <!--Form with header-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-white pt-4"><a href="#aviso" class="text-white">Aviso de Privacidad</a> <span class="py-5">|</span> <a href="http://studio-8.co" class="text-white" target="_blank">copyright © 2018 Studio8 Co</a>.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Modal FACHADAS-->
+    <div class="modal" id="modalFachadas" data-easein="flipXIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <h2 class="titulos color-secundario text-center pb-5">
+                            SERVICIOS
+                        </h2>
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+
+                                    <div class="col-md-6 col-lg-6 order-md-last mb-4">
+                                        <img src="img/modalServ/fachadas.jpg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                                        <img src="img/iconos/fachada-boton.svg" class="iconWidth" alt="">
+                                        <h4 class="color-secundario my-4">FACHADAS</h4>
+
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link modal-info active" id="tabIntegrales-tab" data-toggle="pill" href="#tabIntegrales" role="tab" aria-controls="v-pills-home" aria-selected="true">FACHADAS INTEGRALES</a>
+                                            <a class="nav-link modal-info" id="tabSuspendidas-tab" data-toggle="pill" href="#tabSuspendidas" role="tab" aria-controls="v-pills-profile" aria-selected="false">FACHADAS SUSPENDIDAS</a>
+                                            <a class="nav-link modal-info" id="tabSistema-tab" data-toggle="pill" href="#tabSistema" role="tab" aria-controls="v-pills-messages" aria-selected="false">FACHADAS CON SISTEMA DE ARAÑA</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-10 mt-4">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="tabIntegrales" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <h5 class="text-center color-secundario py-3">FACHADAS INTEGRALES</h5>
+                                        <p>Las fachadas integrales son utilizadas como cerramiento decorativo o integral en construcciones de carácter institucional, comercial o residencial, en edificaciones nuevas o en remodelación y restauración de obras.
+                                        </p>
+                                        <p>Estructura de aluminio y cristal que permite dar una apariencia moderna y uniforme a lo ancho y alto de la fachada de cualquier edificio, brindando así mismo un gran campo de visión para los usuarios.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="tabSuspendidas" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                        <h5 class="text-center color-secundario py-3">FACHADAS SUSPENDIDAS</h5>
+                                        <p>Son paredes formadas por láminas de cristal templado sujetas desde la parte superior de la estructura del edificio, conformadas por placas, Ángulos articulados y tornillos que sujetan los paneles de cristal templado. La aplicación de fachadas suspendidas permite el paso de la luz con gran transparencia y ligereza en las edificaciones, con un mínimo de barreras visuales. El funcionamiento del sistema consiste en el trabajo de cada cristal como un elemento estructural sin necesidad de perfiles o marcos, el mismo, trabaja estructuralmente soportando el peso de la sección de cristal y manteniendo su flexibilidad ante las presiones de viento.
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane fade" id="tabSistema" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                        <h5 class="text-center color-secundario py-3">FACHADAS CON SISTEMA DE ARAÑA</h5>
+                                        <p>Son paredes formadas por láminas de cristal templado sujetas desde la parte superior de la estructura del edificio, conformadas por placas, Ángulos articulados y tornillos que sujetan los paneles de cristal templado. La aplicación de fachadas suspendidas permite el paso de la luz con gran transparencia y ligereza en las edificaciones, con un mínimo de barreras visuales. El funcionamiento del sistema consiste en el trabajo de cada cristal como un elemento estructural sin necesidad de perfiles o marcos, el mismo, trabaja estructuralmente soportando el peso de la sección de cristal y manteniendo su flexibilidad ante las presiones de viento.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal MURO CORTINA-->
+    <div class="modal" id="modalMuro" data-easein="flipXIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <h2 class="titulos color-secundario text-center pb-5">
+                            SERVICIOS
+                        </h2>
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+
+                                    <div class="col-md-6 col-lg-6 order-md-last mb-4">
+                                        <img src="img/modalServ/fachadas.jpg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                                        <img src="img/iconos/murocortina-boton.svg" class="iconWidth" alt="">
+                                        <h4 class="color-secundario my-4">MURO CORTINA</h4>
+
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link modal-info active" id="tabIntegrales-tab" data-toggle="pill" href="#tabIntegrales" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                                MURO CORTINA
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-10 mt-4">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="tabIntegrales" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <h5 class="text-center color-secundario py-3">Muro Cortina (en inglés curtain wall)</h5>
+                                        <p>Muro Cortina (en inglés curtain wall) es un sistema de fachada ligera y acristalada, independiente de la estructura resistente del edificio y se construye de forma continua por delante de ella. Sistema aplicado a edificios de pequeña a mediana envergadura, instalado frente a losas. Proporciona un completo cierre de la obra gruesa, dando un aspecto de modernidad al entorno.
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal EUROVENT-->
+    <div class="modal" id="modalEuro" data-easein="flipXIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <h2 class="titulos color-secundario text-center pb-5">
+                            SERVICIOS
+                        </h2>
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+
+                                    <div class="col-md-6 col-lg-6 order-md-last mb-4">
+                                        <img src="img/modalServ/fachadas.jpg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                                        <img src="img/iconos/murocortina-boton.svg" class="iconWidth" alt="">
+                                        <h4 class="color-secundario my-4">EUROVENT</h4>
+
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link modal-info active" id="tabIntegrales-tab" data-toggle="pill" href="#tabClasico" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                                EUROVENT CLASICO
+                                            </a>
+                                            <a class="nav-link modal-info" id="tabIntegrales-tab" data-toggle="pill" href="#tabPremium" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                                EUROVENT PREMIUM
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-10 mt-4">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="tabClasico" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <h5 class="text-center color-secundario py-3">EUROVENT CLASICO</h5>
+                                        <p>Canceleria fija serie 35,50,60,70,140, corredizas serie 50,60,70,100, cortinas anticiclonicas HV, ventanas batientes y proyeccion serie 35 "Americana" batiente s35 "Europea" batiente y proyeccion serie 50, Puertas comercial S50, Residencial S50. Muro cortina S MC-450, S MC-500
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane fade" id="tabPremium" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <h5 class="text-center color-secundario py-3">EUROVENT PREMIUM</h5>
+                                        <p>Canceleria fija S45, S80, S150, Corredizas S80, S150, Ventana S45, Puertas S45 Camara Europea.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal CANCELERÍA-->
+    <div class="modal" id="modalCancel" data-easein="flipXIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <h2 class="titulos color-secundario text-center pb-5">
+                            SERVICIOS
+                        </h2>
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+
+                                    <div class="col-md-6 col-lg-6 order-md-last mb-4">
+                                        <img src="img/modalServ/fachadas.jpg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                                        <img src="img/iconos/murocortina-boton.svg" class="iconWidth" alt="">
+                                        <h4 class="color-secundario my-4">CANCELERÍA</h4>
+
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link modal-info active" id="tabIntegrales-tab" data-toggle="pill" href="#tabIntegrales" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                                CANCELERÍA
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-10 mt-4">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="tabIntegrales" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <h5 class="text-center color-secundario py-3">CANCELERÍA</h5>
+                                        <p>Los canceles para baño incluyen una amplia gama de modelos y diseños. Dependiendo de las necesidades, el espacio disponible y el gusto de la persona, se pueden fabricar cancelescorredizos, en escuadra, curvos y abatibles. Los canceles para baño incluyen una amplia gama de modelos y diseños. Dependiendo de las necesidades, el espacio disponible y el gusto de la persona, se pueden fabricar cancelescorredizos, en escuadra, curvos y abatibles. Para quien toma cuidado de cada detalle en su hogar, la cancelería de cristal templado es el complemento ideal en el proyecto de su casa o empresa. Ese toque de elegancia que distingue a un espacio con estilo de un lugar común, lo da el cristal templado.
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal LOUVERS-->
+    <div class="modal" id="modalLouver" data-easein="flipXIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <h2 class="titulos color-secundario text-center pb-5">
+                            SERVICIOS
+                        </h2>
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+
+                                    <div class="col-md-6 col-lg-6 order-md-last mb-4">
+                                        <img src="img/modalServ/fachadas.jpg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                                        <img src="img/iconos/murocortina-boton.svg" class="iconWidth" alt="">
+                                        <h4 class="color-secundario my-4">LOUVERS</h4>
+
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link modal-info active" id="tabIntegrales-tab" data-toggle="pill" href="#tabFijas" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                                LOUVERS FIJAS
+                                            </a>
+                                            <a class="nav-link modal-info" id="tabIntegrales-tab" data-toggle="pill" href="#tabMoviles" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                                LOUVERS MÓVILES
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-10 mt-4">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="tabFijas" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <h5 class="text-center color-secundario py-3">LOUVERS FIJAS</h5>
+                                        <p>Son tabletas que no se pueden regular, solo se instalan con el ángulo de inclinación requerido previamente por el arquitecto. Se compone de lamas (aluminio/PVC) y soportes de aluminio.
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane fade" id="tabMoviles" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <h5 class="text-center color-secundario py-3">LOUVERS MÓVILES</h5>
+                                        <p>Son tabletas de accionamiento motorizado. Se compone de lamas (aluminio/PVC) y soportes de aluminio.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal SLIDING SHOWER-->
+    <div class="modal" id="modalShower" data-easein="flipXIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <h2 class="titulos color-secundario text-center pb-5">
+                            SERVICIOS
+                        </h2>
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+
+                                    <div class="col-md-6 col-lg-6 order-md-last mb-4">
+                                        <img src="img/modalServ/fachadas.jpg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                                        <img src="img/iconos/murocortina-boton.svg" class="iconWidth" alt="">
+                                        <h4 class="color-secundario my-4">SLIDING SHOWER</h4>
+
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link modal-info active" id="tabIntegrales-tab" data-toggle="pill" href="#tabShower" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                               SLIDING SHOWER
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-10 mt-4">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="tabShower" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <h5 class="text-center color-secundario py-3">SLIDING SHOWER</h5>
+                                        <p>Sistema corredizo a base de herrajes de acero inoxidable para el aprovechamiento de espacio reducido, normalmente se utiliza en baños.
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal SLIDING SHOWER-->
+    <div class="modal" id="modalBarandal" data-easein="flipXIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <h2 class="titulos color-secundario text-center pb-5">
+                            SERVICIOS
+                        </h2>
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+
+                                    <div class="col-md-6 col-lg-6 order-md-last mb-4">
+                                        <img src="img/modalServ/fachadas.jpg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                                        <img src="img/iconos/murocortina-boton.svg" class="iconWidth" alt="">
+                                        <h4 class="color-secundario my-4">BARANDALES</h4>
+
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link modal-info active" id="tabIntegrales-tab" data-toggle="pill" href="#tabShower" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                                BARANDALES DE CRISTAL TEMPLADO
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-10 mt-4">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="tabShower" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <h5 class="text-center color-secundario py-3"> BARANDALES DE CRISTAL TEMPLADO</h5>
+                                        <p>Los barandales de cristal templado se pueden adaptar a cualquier necesidad: pueden utilizarse con herrajes, postes, empotrados. Además, pueden instalarse sobre firme, muretes, escaleras y otras formas. Ya sea para uso residencial o comercial, diseñamos y fabricamos una gran variedad de barandales de cristal templado con accesorios de acero inoxidable que vayan de la mano con las necesidades y requerimientos arquitectónicos de nuestros clientes. Los barandales en general pueden ser empleados para zonas rectas, curvas, helicoidales (caracol) y rampas, en residencias, edificios, centros comerciales, bodegas, plantas industriales, hospitales, parques, estadios, gimnasios, muelles, centros de rehabilitación, etc.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal APARADORES-->
+    <div class="modal" id="modalAparadores" data-easein="flipXIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <h2 class="titulos color-secundario text-center pb-5">
+                            SERVICIOS
+                        </h2>
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+
+                                    <div class="col-md-6 col-lg-6 order-md-last mb-4">
+                                        <img src="img/modalServ/fachadas.jpg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                                        <img src="img/iconos/murocortina-boton.svg" class="iconWidth" alt="">
+                                        <h4 class="color-secundario my-4">APARADORES</h4>
+
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link modal-info active" id="tabIntegrales-tab" data-toggle="pill" href="#tabAparadores" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                                APARADORES
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-10 mt-4">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="tabAparadores" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <h5 class="text-center color-secundario py-3">APARADORES</h5>
+                                        <p>Muebles y vitrinas sobre diseño y medidas del cliente, manejamos diferentes espesores de cristal, asi como tipos del mismo que pueden satisfacer las necesidades de uso, contamos con sistemas giratorios y con iluminación.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal DOMOS Y TRAGALUCES-->
+    
+    <div class="modal" id="modalDomos" data-easein="flipXIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <h2 class="titulos color-secundario text-center pb-5">
+                            SERVICIOS
+                        </h2>
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+
+                                    <div class="col-md-6 col-lg-6 order-md-last mb-4">
+                                        <img src="img/modalServ/fachadas.jpg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                                        <img src="img/iconos/murocortina-boton.svg" class="iconWidth" alt="">
+                                        <h4 class="color-secundario my-4">DOMOS Y TRAGALUCES</h4>
+
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link modal-info active" id="tabIntegrales-tab" data-toggle="pill" href="#tabDomo" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                                DOMOS Y TRAGALUCES
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-10 mt-4">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="tabDomo" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <h5 class="text-center color-secundario py-3">DOMOS Y TRAGALUCES</h5>
+                                        <p>Fabricados de cristal templado 1.5mm y 6mm; también de acrílico o policarbonato; soportados por perfiles de aluminio estructural; de cualquier diseño que su proyecto requiera y usando materiales de la más alta calidad:
+                                        </p>
+                                        <ul>
+                                            <li>Cristal templado de 6mm. Claro, filtrasol y tintex verde.</li>
+                                            <li>Cristal templado SOL-LITE de 6 mm con protección UV.</li>
+                                            <li>Cristal doble DUOVENT templado de 6+6mm.</li>
+                                            <li>Policarbonato celular de 6mm.</li>
+                                            <li>Acrílico de 3 y 6mm.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal PUERTAS DE CRISTAL-->
+    <div class="modal" id="modalPuertas" data-easein="flipXIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <h2 class="titulos color-secundario text-center pb-5">
+                            SERVICIOS
+                        </h2>
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+
+                                    <div class="col-md-6 col-lg-6 order-md-last mb-4">
+                                        <img src="img/modalServ/fachadas.jpg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                                        <img src="img/iconos/murocortina-boton.svg" class="iconWidth" alt="">
+                                        <h4 class="color-secundario my-4">PUERTAS DE CRISTAL</h4>
+
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link modal-info active" id="tabIntegrales-tab" data-toggle="pill" href="#tabBisagra" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                                TEMPLADO CON BISAGRA HIDRÁULICA
+                                            </a>
+
+                                            <a class="nav-link modal-info" id="tabIntegrales-tab" data-toggle="pill" href="#tabElite" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                                TEMPLADO CON SISTEMA ELITE
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-10 mt-4">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="tabBisagra" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <h5 class="text-center color-secundario pt-3">PUERTAS DE CRISTAL</h5>
+                                        <h6 class="text-center color-secundario pb-3">TEMPLADO CON BISAGRA HIDRAULICA</h6>
+                                        <p>Sistema abatible para puertas de cristal templado fabricado en acero inoxidable compuesto por sistemas de herrajes pivotantes, superiores e inferiores, que se complementan con bisagras hidráulicas de piso.
+                                        </p>
+                                        <p>También se puede utilizar con puertas oscilantes o puertas controladas por sistemas automatizados.</p>
+                                        <p>También ofrecemos sistemas similares de otras marcas como OPCION, JACKSON, BRUKEN, SPEEDY y HERRALUM.</p>
+                                        <p>Puertas abatibles de cristal templadoherrajes para puertas abatibles de cristal templadopuertas abatibles de cristal templadopuertas abatibles de cristal templadobisagra dorma para puerta abatible de cristal templado</p>
+                                    </div>
+
+                                    <div class="tab-pane fade show" id="tabElite" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <h5 class="text-center color-secundario pt-3">PUERTAS DE CRISTAL</h5>
+                                        <h6 class="text-center color-secundario pb-3">TEMPLADO CON SISTEMA ELITE</h6>
+                                        <p>Sistema abatible de acero ideal para espacios interiores. Fabricado en acero inoxidable compuesto por sistemas de herrajes pivotantes, superiores e inferiores, que se complementan con bisagras hidráulicas de piso.</p>
+                                        <p>También se puede utilizar con puertas oscilantes o puertas controladas por sistemas automatizados.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- VENTANAS MODALES DE PROYECTOS -->
+
+    <!-- Modal BAYER-->
+
+    <div class="modal" id="modalBayer" data-easein="flipXIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+                                   <div class="col-12 col-md-6 mt-5 mt-md-1 order-md-2">
+                                        <h2 class="proyectTitle color-secundario text-center"><i class="fas fa-circle fa-xs"></i> BAYER <i class="fas fa-circle fa-xs"></i></h2>
+                                        <hr class="line">
+                                        <h5 class="text-center color-secundario">Polanco CDMX</h5>
+                                        <ul class="color-secundario mt-5">
+                                            <li class="li">Suministro y colocación de cancelería de aluminio blanco con cristal claro en todo el Edificio nuevo de Bayer. </li>
+                                            <li class="li">Cristales Duo Vent para el cubo de las escaleras, cristales esmerilados para el interior de las oficinas. </li>
+                                            <li class="li">Domo a base de cristales laminados de 12 mm.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6 text-center">
+                                        <img src="img/proyectos/bayer/foto.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="row justify-content-center my-3">
+                                    <div class="contenedor-flex">
+                                        <div class="flex-img">
+                                            <img src="img/proyectos/bayer/foto1.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="flex-img">
+                                            <img src="img/proyectos/bayer/foto2.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="flex-img">
+                                            <img src="img/proyectos/bayer/foto3.jpg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                 <div class="row justify-content-center my-3">
+                                    <div class="contenedor-flex">
+                                        <div class="flex-img">
+                                            <img src="img/proyectos/bayer/foto4.jpg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="row my-3">
+                                 <div class="col-12">
+                                      <img src="img/proyectos/bayer/Group1.jpg" class="img-fluid" alt="">
+                                 </div>
+                                </div>
+                                <div class="row my-3">
+                                 <div class="col-12">
+                                      <img src="img/proyectos/bayer/foto8.jpg" class="img-fluid" alt="">
+                                 </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Aeropuerto-->
+
+    <div class="modal" id="modalAeropuerto" data-easein="flipXIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+                                   <div class="col-12 col-md-6 mt-5 mt-md-1 order-md-2">
+                                        <h2 class="proyectTitle color-secundario text-center"><i class="fas fa-circle fa-xs"></i> AEROPUERTO <i class="fas fa-circle fa-xs"></i></h2>
+                                        <hr class="line">
+                                        <h5 class="text-center color-secundario">Aeropuerto Internacional, Cancún</h5>
+                                        <ul class="color-secundario mt-5">
+                                            <li class="li">Suministro y colocación de básicos para fachada de 7 pulgadas de fabricación especial para cavidad de cristal insulado de 35 mm utilizando:
+                                                <ul>
+                                                    <li>Cristal laminado de 6mm con 6mm claro</li>
+                                                    <li>Separador de 12 mm</li>
+                                                    <li>Cristal versalux 6 mm</li>
+                                               </ul>
+                                            </li>
+                                        </ul>
+                                        <h6>En fachadas exteriores:</h6>
+                                        <ul>    
+                                            <li class="li">Suministro y colocación de cancelaría de la línea Eurovent serie 70 fijo, corredizo y abatible con cristal templado de 6 mm claro. </li>
+                                            <li class="li">Cancelería interior en el área de oficinas  y en el área de carga y descarga.</li>
+                                            <li>Puertas fijas y corredizas tipo  louver para cuartos de máquinas.</li>
+                                            <li>Puertas de cristal laminado  6mm  con 6 mm  acabado niebla con herrajes para cristal en el área de sanitarios.</li>
+                                            <li>Mamparas para mingitorios  con cristal laminado  6mm  con 6 mm  acabado niebla. </li>
+                                            <li> Espejos para lavamanos 6mm con bisel de 1 pulgada y base tubular de aluminio de 1 ¼ x 1 ¼ pulgada.</li>
+                                       
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6 text-center">
+                                        <img src="img/proyectos/aeropuerto/Group1.jpg" class="img-fluid" alt="">
+                                    </div>
+                                   
+                                </div>
+                                   
+                                  <div class="row my-3">
+                                    <div class="col-12">
+                                        <div class="col-12 px-0">
+                                            <img src="img/proyectos/aeropuerto/foto2.jpg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                  </div>
+                                 <div class="row my-3">
+                                    <div class="col-12">
+                                        <div class="col-12 px-0">
+                                            <img src="img/proyectos/aeropuerto/Group2.jpg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                  </div>
+ 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal HEB-->
+
+    <div class="modal" id="modalHeb" data-easein="flipXIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+                                   <div class="col-12 col-md-6 mt-5 mt-md-1 order-md-2">
+                                        <h2 class="proyectTitle color-secundario text-center"><i class="fas fa-circle fa-xs"></i> HEB <i class="fas fa-circle fa-xs"></i></h2>
+                                        <hr class="line">
+                                        <h5 class="text-center color-secundario">Nuevo Laredo | Monterrey</h5>
+                                        <h6 class="color-secundario mt-5">
+                                            Nuevo Laredo:
+                                        </h6>
+                                        <ul class="color-secundario">
+                                            <li class="li">Suministro y colocación de la cancelería integral  a base de aluminio - cristal en toda la fachada.  
+                                            </li>
+                                            <li>Instalación de espejos en el área de sanitarios.</li>
+                                        </ul>
+                                        <h6 class="color-secundario">Monterrey:</h6>
+                                        <ul>
+                                            <li>Desmontaje de puertas automáticas.</li>
+                                            <li>Modificaciones a la cancelería existente, mediante el desmontaje, recorte y montaje.</li>
+                                            <li>Suministro y colocación de la cancelería de la fachada.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6 text-center">
+                                        <img src="img/proyectos/heb/foto.jpg" class="img-fluid" alt="">
+                                    </div>
+                                   
+                                </div>
+                                   
+                                  <div class="row my-3">
+                                    <div class="col-12">
+                                        <div class="col-12 px-0">
+                                            <img src="img/proyectos/heb/Group1.jpg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                  </div>
+                                 <div class="row my-3">
+                                    <div class="col-12">
+                                        <div class="col-12 px-0">
+                                            <img src="img/proyectos/heb/foto2.jpg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="row my-3">
+                                    <div class="col-12">
+                                        <div class="col-12 px-0">
+                                            <img src="img/proyectos/heb/Group2.jpg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                  </div>
+ 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal CIMA-->
+
+    <div class="modal" id="modalCima" data-easein="flipXIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+                                   <div class="col-12 col-md-6 mt-5 mt-md-1 order-md-2">
+                                        <h2 class="proyectTitle color-secundario text-center"><i class="fas fa-circle fa-xs"></i> CIMA <i class="fas fa-circle fa-xs"></i></h2>
+                                        <hr class="line">
+                                        <h5 class="text-center color-secundario">Centro Internacional de Medicina Chihuahua</h5>
+                                        <ul class="color-secundario mt-5">
+                                            <li class="li">Suministro y colocación de cancelería de 4”en color G2 con cristal blue - green en los 5 pisos de la fachada del Edificio. 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6 text-center">
+                                        <img src="img/proyectos/cima/foto.jpg" class="img-fluid" alt="">
+                                    </div>
+                                   
+                                </div>
+                                   
+                                  <div class="row my-3">
+                                    <div class="col-12">
+                                        <div class="col-12 px-0">
+                                            <img src="img/proyectos/cima/Group1.jpg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                  </div>
+                                 <div class="row my-3">
+                                    <div class="col-12">
+                                        <div class="col-12 px-0">
+                                            <img src="img/proyectos/cima/foto2.jpg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                  </div>
+ 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal SAMSUNG-->
+
+    <div class="modal" id="modalSamsung" data-easein="flipXIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+                                   <div class="col-12 col-md-6 mt-5 mt-md-1 order-md-2">
+                                        <h2 class="proyectTitle color-secundario text-center"><i class="fas fa-circle fa-xs"></i> SAMSUNG <i class="fas fa-circle fa-xs"></i></h2>
+                                         <h5 class="text-center color-secundario">Querétaro</h5>
+                                        <hr class="line">
+                                        <ul class="color-secundario mt-5">
+                                            <li class="li">Suministro y colocación de cancelería de aluminio blanco con cristal tintex verde, en el la fachada principal. 
+                                            </li>
+                                            <li>Además cancelería interior en el área de oficinas.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6 text-center">
+                                        <img src="img/proyectos/samsung/foto.jpg" class="img-fluid" alt="">
+                                    </div>
+                                   
+                                </div>
+                                   
+                                  <div class="row my-3">
+                                    <div class="col-12">
+                                        <div class="col-12 px-0">
+                                            <img src="img/proyectos/samsung/Group1.jpg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                  </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Modal AMEX-->
+
+    <div class="modal" id="modalAmex" data-easein="flipXIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+                                   <div class="col-12 col-md-6 mt-5 mt-md-1 order-md-2">
+                                        <h2 class="proyectTitle color-secundario text-center"><i class="fas fa-circle fa-xs"></i> AMEX <i class="fas fa-circle fa-xs"></i></h2>
+                                        <hr class="line">
+                                        <h5 class="text-center color-secundario">American Express, CDMX</h5>
+                                        <ul class="color-secundario mt-5">
+                                            <li class="li">Suministro y colocación de 2800 m2 de cristal 9 mm templado con película frosty, en el interior del edificio en área de oficinas.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6 text-center">
+                                        <img src="img/proyectos/amex/foto.jpg" class="img-fluid" alt="">
+                                    </div>
+                                   
+                                </div>
+                                   
+                                  <div class="row my-3">
+                                    <div class="col-12">
+                                        <div class="col-12 px-0">
+                                            <img src="img/proyectos/amex/Group1.jpg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                  </div>
+                                  
+                                 <div class="row my-3">
+                                    <div class="col-12">
+                                        <div class="col-12 px-0">
+                                            <img src="img/proyectos/amex/foto2.jpg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                  </div>
+                                  
+                                   <div class="row my-3">
+                                    <div class="col-12">
+                                        <div class="col-12 px-0">
+                                            <img src="img/proyectos/amex/Group2.jpg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                  </div>
+ 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BOOTSTRAP CORE JAVASCRIPT  -->
 
     <script src="js/jquery.min.js"></script>
+    <script src="js/animatescroll.min.js"></script>
+    <script src="js/velocity.min.js"></script>
+    <script src="js/velocity.ui.min.js"></script>
+    <script src="js/modal.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+
 </body>
 </html>

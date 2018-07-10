@@ -1,25 +1,60 @@
+/* Small devices (landscape phones, 576px and up) */
 
- /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
+    html {
+        font-size: 13px;
+    }
+    .card-body h5 {
+        font-size: 1.2rem;
+    }
+    .modal-dialog {
+        max-width: 100%;
+    }
 
 
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
 
-
- }
+@media (min-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    .card-body h5 {
+        font-size: 1rem;
+    }
+    .size{
+    width: 30%;
+    margin: 0.5rem;
+    }
+    
+}
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
 
-
- }
+@media (min-width: 992px) {
+    html {
+        font-size: 15px;
+    }
+    .card-body h5 {
+        font-size: 1rem;
+    }
+    .modal-dialog {
+        max-width: 90%;
+    }
+    .size{
+    width: 23%;
+    margin: 0.7rem;
+    }
+}
 
 /* // Extra large devices (large desktops, 1200px and up) */
+
 @media (min-width: 1200px) {
-
-
-    
- }
+    html {
+        font-size: 16px;
+    }
+    .card-body h5 {
+        font-size: 1.2rem;
+    }
+}

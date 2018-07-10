@@ -1,0 +1,111 @@
+
+#serv1,#serv2,#serv3,#serv4,#serv5,#serv6,#serv7,#serv8,#serv9,#serv10{
+    transition: all 0.5s;
+}
+
+#serv1 .iconServ{
+     background-image: url(../img/iconos/fachada.svg);
+}
+#serv2 .iconServ{
+     background-image: url(../img/iconos/murocortina.svg);
+}
+#serv3 .iconServ{
+     background-image: url(../img/iconos/eurovent.svg);
+}
+#serv4 .iconServ{
+     background-image: url(../img/iconos/canceleria.svg);
+}
+#serv5 .iconServ{
+     background-image: url(../img/iconos/lovers.svg);
+}
+#serv6 .iconServ{
+     background-image: url(../img/iconos/silding-shower.svg);
+}
+#serv7 .iconServ{
+     background-image: url(../img/iconos/barandales.svg);
+}
+#serv8 .iconServ{
+     background-image: url(../img/iconos/aparadores.svg);
+}
+#serv9 .iconServ{
+     background-image: url(../img/iconos/domos.svg);
+}
+#serv10 .iconServ{
+     background-image: url(../img/iconos/puertascristal.svg);
+}
+
+
+#serv1:hover,#serv2:hover,#serv3:hover,#serv4:hover,#serv5:hover,#serv6:hover,#serv7:hover,#serv8:hover,#serv9:hover,#serv10:hover{
+    transform: scale(1.05);
+}
+
+#serv1:hover .iconServ{
+    background-image: url(../img/iconos/fachada-boton.svg);
+    color: #56a09a;
+}
+#serv1:hover .titleServ{
+    color: #56a09a;
+}
+
+#serv2:hover .iconServ{
+     background-image: url(../img/iconos/murocortina-boton.svg);
+}
+#serv2:hover .titleServ{
+    color: #56a09a;
+}
+
+#serv3:hover .iconServ{
+     background-image: url(../img/iconos/eurovent-boton.svg);
+}
+#serv3:hover .titleServ{
+    color: #56a09a;
+}
+
+#serv4:hover .iconServ{
+     background-image: url(../img/iconos/canceleria-boton.svg);
+}
+#serv4:hover .titleServ{
+    color: #56a09a;
+}
+
+#serv5:hover .iconServ{
+     background-image: url(../img/iconos/lovers-boton.svg);
+}
+#serv5:hover .titleServ{
+    color: #56a09a;
+}
+
+#serv6:hover .iconServ{
+     background-image: url(../img/iconos/silding-shower-boton.svg);
+}
+#serv6:hover .titleServ{
+    color: #56a09a;
+}
+
+#serv7:hover .iconServ{
+     background-image: url(../img/iconos/barandales-boton.svg);
+}
+#serv7:hover .titleServ{
+    color: #56a09a;
+}
+
+#serv8:hover .iconServ{
+     background-image: url(../img/iconos/aparadores-boton.svg);
+}
+#serv8:hover .titleServ{
+    color: #56a09a;
+}
+
+#serv9:hover .iconServ{
+     background-image: url(../img/iconos/domos-boton.svg);
+}
+#serv9:hover .titleServ{
+    color: #56a09a;
+}
+
+#serv10:hover .iconServ{
+     background-image: url(../img/iconos/puertascristal-boton.svg);
+}
+#serv10:hover .titleServ{
+    color: #56a09a;
+}
