@@ -1,3 +1,5 @@
+// Animate On scroll Nav
+
 $(window).scroll(function(){
    var top = $(this).scrollTop();
    var menu = $('nav');    
@@ -10,7 +12,7 @@ $(window).scroll(function(){
     
 });
 
-
+// Owl Carrousel Settings
 
   $(".owl-carousel").owlCarousel({
     items:4,
@@ -39,6 +41,7 @@ $(window).scroll(function(){
     }
   });
 
+ // Mixitup Settings 
 
 $('#mix-wrapper').mixItUp({
   load: {
@@ -59,3 +62,5 @@ $('#mix-wrapper').mixItUp({
     }
   }
 });
+
+

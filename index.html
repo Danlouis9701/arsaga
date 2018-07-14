@@ -72,7 +72,7 @@
             </div>
         </div>
     </nav>
-
+    
     <header>
         <div class="container">
             <!--
@@ -88,15 +88,16 @@
 
         </div>
     </header>
-
+    <div id="trigger"></div>
     <section id="vendido mt-5">
         <h2 class="titulos color-secundario text-center py-5">
             LO MAS VENDIDO
         </h2>
+       
         <div class="container py-5">
             <div class="row">
                 <div class="col-6 col-md-3">
-                    <div class="card">
+                    <div class="card cardScale">
                         <img class="card-img-top img-fluid" src="img/mas_vendido/CRISTAL-CLARO-ANTIREFLEJANTE-272x274.jpg" alt="Card image cap">
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center">
@@ -1422,6 +1423,10 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/animatescroll.min.js"></script>
+    <script src="greensock/TweenMax.min.js"></script>
+    <script src="greensock/EasePack.min.js"></script>
+    <script src="scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
     <script src="js/velocity.min.js"></script>
     <script src="js/velocity.ui.min.js"></script>
     <script src="js/modal.js"></script>
@@ -1429,6 +1434,33 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        // Scroll magic Settings
 
+// init controller           
+var controller = new ScrollMagic.Controller();
+
+// Animación de la imagen del clip
+// Animación de News
+// build tween
+var tween3 = new TimelineMax();
+tween3.from('.cardScale', 1, {
+        scale: 0,
+        ease: Quad.easeInOut
+    })
+    .to('.cardScale', 1, {
+        scale: 1,
+        ease: Quad.easeInOut
+    }, '+=1');
+
+var scene3 = new ScrollMagic.Scene({
+    triggerElement: "#trigger",
+    offset: '40%'
+});
+scene3.setTween(tween3) // trigger a TweenMax.to tween
+    .addIndicators({name: "news"}) // add indicators (requires plugin)
+    .addTo(controller);
+
+    </script>
 </body>
 </html>
