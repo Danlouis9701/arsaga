@@ -10,6 +10,7 @@ body{
 }
 .titulos{
     font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
     
 }
 .color-secundario{
@@ -174,7 +175,11 @@ footer{
     font-size: 2rem;
 }
 .line{
-    border-color: #00a19a;
+    border-color: #56a09a;
+}
+.line2{
+    width: 30%;
+    border-color: #7e7e7e;
 }
 
 .fa-xs{
@@ -200,4 +205,14 @@ flex:0 1 110%;
 .size{
     width: 40%;
     margin: 1rem;
+}
+
+.bg-info{
+    background-color: #56a099 !important;;
+}
+.bg-white{
+    background-color: #ffffff !important;;
+}
+.f-size{
+    font-size: 0.85rem;
 }
